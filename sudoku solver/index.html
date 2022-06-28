@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header> <p>SUDOKU SOLVER</p> </header>
+
+    <main>
+        <div id="boardDiv">
+            <label for="boardType"> Select a Grid size: </label>
+            <select name="boardType" id="boardType">
+                <option value="9"> 9 x 9</option>
+                <option value="4"> 4 x 4</option>
+                <option value="16"> 16 x 16</option>
+            </select>
+        </div>
+
+        <div id="grid"></div>
+
+        <div class="buttonDiv">
+            <button id="solveButton"> Solve </button>
+            <button id="resetButton"> Reset </button>
+            <button id="unsolveButton"> Unsolve </button>
+        </div>
+
+        
+        <div id="message"></div>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Enter valid values on the Grid input field and Click on Solve.</li>
+            <li>You can Press Tab to move to next cell.</li>
+            <li>The Grid will show one of the valid possible solutions of the Sudoku.</li>
+            <li>Reset will erase all inputs and Unsolve button will restore the original input.</li>
+        </ul>
+    </footer>
+
+    <script src="sudoku.js"></script>
+</body>
+</html>
